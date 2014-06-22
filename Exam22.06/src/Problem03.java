@@ -62,10 +62,6 @@ public class Problem03 {
 				sum += exam.get(score).get(student);
 			}
 			sum /= exam.get(score).keySet().size();
-			int ostatak = (int)(sum *1000.0)%1000;
-			if (ostatak == 14) {
-				sum += 0.001;
-			}
 			System.out.printf(" avg=%.2f",sum);
 			System.out.println();
 		}
