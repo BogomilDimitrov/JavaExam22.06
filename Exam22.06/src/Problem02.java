@@ -34,12 +34,6 @@ public class Problem02 {
 			boolean secondRect = dartX[i] >= (Cx-r+(r/2)) && dartX[i] <= (Cx+r-(r/2)) && dartY[i] >= Cy-r && dartY[i] <= Cy+r;
 			boolean thirdRect = dartX[i] >= (Cx+r-(r/2)) && dartX[i] <= Cx+r && dartY[i] >= (Cy-r+(r/2)) && dartY[i] <= (Cy+r-(r/2));
 			
-									
-//			boolean firstRect = (dartX[i] >= (Cx-r) && dartX[i] <= Cx) && (dartY[i] >= (Cy-1) && dartY[i] <= (Cy+1));
-//			boolean secondRect = (dartX[i] >= (Cx-1) && dartX[i] <= (Cx+1)) && (dartY[i] >= (Cy) && dartY[i] <= (Cy+r));
-//			boolean thirdRect = (dartX[i] >= (Cx) && dartX[i] <= Cx+r) && (dartY[i] >= (Cy-1) && dartY[i] <= (Cy+1));
-//			boolean forthRect = (dartX[i] >= (Cx-1) && dartX[i] <= (Cx+1)) && (dartY[i] >= (Cy-r) && dartY[i] <= (Cy));
-			
 			boolean hit = firstRect||secondRect||thirdRect;
 			
 			if (hit) {
